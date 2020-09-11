@@ -1,0 +1,152 @@
+/*  RESET  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/****************  Custom bg class *****************/
+
+.bg-black {
+    background: #000;
+}
+
+
+/* padding for nav items */
+
+ul li a {
+    padding-right: 3rem !important;
+    
+}
+
+/* showcase css */
+
+#showcase {
+    background: linear-gradient(rgba(0, 0 , 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/banner.png')center/cover no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+
+/*  features section css */
+
+.custom-hr {
+    width: 5%;
+    border: 2px solid orangered;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.col-lg-6 > div.container {
+    padding: 3rem 8rem 3rem 8rem;
+}
+
+.custom-col {
+    background-color: rgb(17, 16, 16) ;
+    color: white;
+    
+}
+
+.custom-text-muted {
+    color: white !important;
+}
+
+.custom-col {
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100% );
+}
+
+
+/* footer css */ 
+
+#footer {
+    background-color: rgb(26, 25, 25);
+}
+
+
+.footer-hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    width: 50%;
+}
+
+.list-unstyled li {
+    padding-bottom: 0.5rem;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+    color: rgb(241, 237, 237);
+    font-size: 0.9rem;
+}
+
+.list-unstyled li a:hover {
+    border-left: 0.1rem solid #fff;
+    padding-left: 0.3rem;
+    
+}
+
+/* font awesome icons color */
+
+i {
+    color: #fff;
+}
+
+
+
+/************ Media Quries **************/
+
+@media (min-width:320px) and (max-width:600px) {
+    
+    h5.mb-4{
+        font-size: 0.9rem;
+    }
+    
+    .responsive-col {
+        display: flex;
+       justify-content: space-evenly;
+    }
+    
+    ul.list-unstyled li a {
+        font-size: 0.8rem;
+        
+        
+    }
+
+    ul.list-unstyled li a:hover {
+        border: none;
+        color: antiquewhite;
+        padding-left: 0;
+    }
+
+    .col-lg-6 > div.container {
+        padding: 2rem 2rem;
+    }
+
+    .custom-col {
+        clip-path: none;
+    }
+
+    i {
+        font-size: 1rem !important;
+    }
+}
+
+
+@media (min-width:601px) and (max-width:991px) {
+    .col-lg-6 > div.container {
+        padding: 2rem 2rem;
+    }
+
+    .custom-col {
+        clip-path: none;
+    }
+} 
